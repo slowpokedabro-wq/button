@@ -1,0 +1,14 @@
+import time
+import tkinter as tk
+def on_button_click():
+    print("Button was clicked!")
+window = tk.Tk()
+window.title("My App")
+window.geometry("300x150")
+button = tk.button(
+  window,
+  text="click me!",
+  command=on_button_click
+)
+button.pack(pady=50)
+window.mainloop()
